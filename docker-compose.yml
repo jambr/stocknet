@@ -1,0 +1,12 @@
+base: 
+  build: ./docker/base
+
+redis:
+  build: ./docker/redis
+  restart: always
+  dns:
+    - 8.8.8.8
+    - 8.8.4.4 
+  volumes:
+    - /etc/localtime:/etc/localtime:ro
+    - /tmp/redis:/tmp
