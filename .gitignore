@@ -1,0 +1,9 @@
+*.swp
+.idea/
+.DS_Store
+.vagrant
+*.tgz
+*.tar.gz
+*.zip
+.envrc
+sn.*
