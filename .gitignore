@@ -7,3 +7,4 @@
 *.zip
 .envrc
 sn.*
+Gemfile.lock

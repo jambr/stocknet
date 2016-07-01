@@ -1,0 +1,21 @@
+windows:
+  - name: stocknet-1
+    layout: even-vertical
+    panes:
+      - commands:
+        - cd sn.picker
+        - DEBUG=* node index.js 
+      - commands:
+        - cd sn.crawl.market
+        - DEBUG=* node index.js
+
+  - name: stocknet-2
+    layout: even-vertical
+    panes:
+      - commands:
+        - curl --retry 3 -kv -X PUT http://127.0.0.1:8001/symbol/LON/VM
+        focus: true
+      - commands:
+        - cd sn.messageWatch
+        - DEBUG=* node index.js
+ 
