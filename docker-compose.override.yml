@@ -1,0 +1,8 @@
+picker: 
+  build: ./sn.picker
+
+crawl-news: 
+  build: ./sn.crawl.news
+
+crawl-market: 
+  build: ./sn.crawl.market
